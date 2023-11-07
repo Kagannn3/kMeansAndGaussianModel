@@ -2,7 +2,7 @@
 #include<stdlib.h> // for rand() function
 #include<time.h>  // for time() function 
 #include<string.h> // for strcmp() function 
-
+//
 int main(){
     int random_number;
     int my_score=0;
@@ -33,7 +33,7 @@ int main(){
             printf("\nYou won");my_score++;
        }
     }
-    printf("Game over");
+    printf("Game over\n");
     printf("The score is:\n");
     printf("My score is: %d\n", my_score);
     return 0; 
