@@ -1,0 +1,19 @@
+{% extends 'base/main.html' %} 
+{% block content %}
+
+<h1>Register</h1>
+
+<form method="POST">
+    <!-- this CSRF token will send to the user's browser.
+     After the user enter the own credentials, who submit the form to the server.
+     Server check the csrf token about if it is invalid or missing for security purposes-->
+    {% csrf_token %} 
+    <!-- to render the login form fields as paragraph -->
+    {{form.as_p}}
+    <!-- submit button to send login credentials to server -->
+    <input type="submit" value="Register">
+</form>
+
+<p>Do you have an account? <a href="">Login</a></p> 
+
+{% endblock content %}

@@ -1,0 +1,14 @@
+{% extends 'base/main.html'}
+{% block content %}
+
+
+<a href="{% url 'tasks' %}">Go back</a>
+<form method="POST">
+    {% csrf_token %}
+    <!-- task represents the current clicked task -->
+    <p>Are you sure you want to delete "{{task}}" task? </p>
+    <!-- when we clicked to the Delete button, the selected task is deleted by the default mode of  DeleteView class-->
+    <input type="submit" value="Delete"> 
+</form>
+
+{% endblock content %}
