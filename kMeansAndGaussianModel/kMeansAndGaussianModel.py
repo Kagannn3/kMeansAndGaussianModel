@@ -133,8 +133,9 @@ bestSilhouetteScore= silhouetteScores[bestKMeansScore]
 # to get the best silhouette score
 print(f"Best Silhouette Score: {bestSilhouetteScore}")
 # to print the best silhouette score
-    
-   
+git push -u origin main
+
+
 
 
 
